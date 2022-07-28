@@ -40,7 +40,7 @@ try:
         print('Authentication Failure: Check hiveAPIkey environment variable has valid key')
     else:
         print('Usage: python3 sendfile.py "filename" "case id"')
-        print('Failure: {}/{}'.format(response.status_code, response.text))
+        print(f'Failure: {response.status_code}/{response.text}')
 
     sys.exit(0)
 except OSError as e:
