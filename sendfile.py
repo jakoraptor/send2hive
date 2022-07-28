@@ -4,7 +4,7 @@ import os
 from thehive4py.api import TheHiveApi
 from thehive4py.models import CaseObservable
 
-hiveurl='***HIVEURL AND PORT***'
+hiveurl='***HIVEURL AND PORT***' # <<< CHANGE THIS
 apikey=os.environ.get('hiveAPIkey')
 
 api = TheHiveApi(hiveurl, apikey)
