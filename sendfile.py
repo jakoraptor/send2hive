@@ -10,7 +10,7 @@ if len(sys.argv) != 4:
     print('Usage: python3 sendfile.py "filename" "user" "case id"\nBefore running, add valid user api key to keyring "hiveapi" eg. "keyring set hiveapi <username>"')
     sys.exit(1)
 
-hiveurl="https://localhost:8000" # <<< CHANGE THIS
+hiveurl="***HIVEURL AND PORT***" # <<< CHANGE THIS
 apikey=keyring.get_password("hiveapi",sys.argv[2])
 api = TheHiveApi(hiveurl, apikey) # <<< ADD cert=False HERE IF SSL NOT USED
 
