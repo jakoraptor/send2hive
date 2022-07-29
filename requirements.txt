@@ -1,1 +1,4 @@
 thehive4py
+keyring
+secretstorage
+dbus-python
